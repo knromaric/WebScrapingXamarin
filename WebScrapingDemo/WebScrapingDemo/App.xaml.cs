@@ -1,4 +1,5 @@
 using System;
+using WebScrapingDemo.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,7 +12,7 @@ namespace WebScrapingDemo
 		{
 			InitializeComponent();
 
-			MainPage = new MainPage();
+			MainPage = new HomePage();
 		}
 
 		protected override void OnStart ()

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WebScrapingDemo.Views.HomePage"
+             BackgroundColor="#EEEEEE">
+    <ContentPage.Content>
+        <Grid RowSpacing="15" ColumnSpacing="15">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.25*"/>
+                <RowDefinition Height="0.25*"/>
+                <RowDefinition Height="0.25*"/>
+                <RowDefinition Height="0.25*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="0.5*"/>
+            </Grid.ColumnDefinitions>
+
+            
+            <Image Source="banner.png" HeightRequest="60" WidthRequest="80" Aspect="Fill" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+
+            <Frame  Grid.Row="1" Grid.Column="0">
+                <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                    <Image Source="aboutus.png" HeightRequest="60" WidthRequest="60"/>
+                    <Label Text="About Us" HorizontalOptions="Center" FontSize="Medium" />
+                </StackLayout>
+            </Frame>
+
+            <Frame  Grid.Row="1" Grid.Column="1">
+                <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                    <Image Source="contactus.png" HeightRequest="60" WidthRequest="60"/>
+                    <Label Text="Contact Us" HorizontalOptions="Center" FontSize="Medium" />
+                </StackLayout>
+            </Frame>
+
+            <Frame  Grid.Row="2" Grid.Column="0">
+                <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                    <Image Source="gallery.png" HeightRequest="60" WidthRequest="60"/>
+                    <Label Text="Gallery" HorizontalOptions="Center" FontSize="Medium" />
+                </StackLayout>
+            </Frame>
+
+            <Frame Grid.Row="2" Grid.Column="1">
+                <StackLayout HorizontalOptions="Center" VerticalOptions="Center" >
+                    <Image Source="products.png" HeightRequest="60" WidthRequest="60"/>
+                    <Label Text="Products" HorizontalOptions="Center" FontSize="Medium"  />
+                </StackLayout>
+            </Frame>
+            <Frame Grid.Row="3" Grid.Column="0">
+                <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                    <Image Source="newsandevents.png" HeightRequest="60" WidthRequest="60"/>
+                    <Label Text="News &amp; Events" HorizontalOptions="Center" FontSize="Medium"  />
+                </StackLayout>
+            </Frame>
+            <Frame Grid.Row="3" Grid.Column="1">
+                <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                    <Image Source="thumbsup.png" HeightRequest="60" WidthRequest="60"/>
+                    <Label Text="Like Our Page" HorizontalOptions="Center" FontSize="Medium"  />
+                </StackLayout>
+            </Frame>
+        </Grid>
+        
+        
+    </ContentPage.Content>
+</ContentPage> 
