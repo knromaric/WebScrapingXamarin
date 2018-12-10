@@ -23,13 +23,20 @@
                 <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
                     <Image Source="aboutus.png" HeightRequest="60" WidthRequest="60"/>
                     <Label Text="About Us" HorizontalOptions="Center" FontSize="Medium" />
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding AboutUsCommand}"></TapGestureRecognizer>
+                    </StackLayout.GestureRecognizers>
                 </StackLayout>
+                
             </Frame>
 
             <Frame  Grid.Row="1" Grid.Column="1">
                 <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
                     <Image Source="contactus.png" HeightRequest="60" WidthRequest="60"/>
                     <Label Text="Contact Us" HorizontalOptions="Center" FontSize="Medium" />
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ContactUsCommand}"></TapGestureRecognizer>
+                    </StackLayout.GestureRecognizers>
                 </StackLayout>
             </Frame>
 
@@ -37,6 +44,9 @@
                 <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
                     <Image Source="gallery.png" HeightRequest="60" WidthRequest="60"/>
                     <Label Text="Gallery" HorizontalOptions="Center" FontSize="Medium" />
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding GalleryCommand}"></TapGestureRecognizer>
+                    </StackLayout.GestureRecognizers>
                 </StackLayout>
             </Frame>
 
@@ -44,18 +54,27 @@
                 <StackLayout HorizontalOptions="Center" VerticalOptions="Center" >
                     <Image Source="products.png" HeightRequest="60" WidthRequest="60"/>
                     <Label Text="Products" HorizontalOptions="Center" FontSize="Medium"  />
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ProductsCommand}"></TapGestureRecognizer>
+                    </StackLayout.GestureRecognizers>
                 </StackLayout>
             </Frame>
             <Frame Grid.Row="3" Grid.Column="0">
                 <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
                     <Image Source="newsandevents.png" HeightRequest="60" WidthRequest="60"/>
                     <Label Text="News &amp; Events" HorizontalOptions="Center" FontSize="Medium"  />
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding NewsAndEventsCommand}"></TapGestureRecognizer>
+                    </StackLayout.GestureRecognizers>
                 </StackLayout>
             </Frame>
             <Frame Grid.Row="3" Grid.Column="1">
                 <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
                     <Image Source="thumbsup.png" HeightRequest="60" WidthRequest="60"/>
                     <Label Text="Like Our Page" HorizontalOptions="Center" FontSize="Medium"  />
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding LikePageCommand}"></TapGestureRecognizer>
+                    </StackLayout.GestureRecognizers>
                 </StackLayout>
             </Frame>
         </Grid>
