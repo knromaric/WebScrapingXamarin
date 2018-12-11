@@ -47,7 +47,7 @@ namespace WebScrapingDemo.ViewModels
 
         private void ProductsCommandMethod(object obj)
         {
-            _navigation.PushAsync(new ProductsPage());
+            _navigation.PushAsync(new ProductsCategoryPage());
         }
 
         private void ContactCommandMethod(object obj)
