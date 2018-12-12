@@ -2,21 +2,27 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WebScrapingDemo.Views.ProductsPage"
-             Title="product page">
+                >
     <ContentPage.Content>
-        <ListView HasUnevenRows="True" ItemsSource="{Binding ProductsCollection}" SeparatorColor="Blue">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <Frame HorizontalOptions="FillAndExpand">
-                            <StackLayout Orientation="Vertical">
-                                <Label Text="{Binding ProductName}" HorizontalTextAlignment="Center"/>
-                                <Image Source="{Binding ProductImage}" Aspect="AspectFit" />
-                            </StackLayout>
-                        </Frame>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <ListView HasUnevenRows="True" ItemsSource="{Binding ProductsCollection}" SeparatorColor="Blue">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Vertical">
+                                    <Label Text="{Binding ProductName}" HorizontalTextAlignment="Center"/>
+                                    <Image Source="{Binding ProductImage}" Aspect="AspectFit" />
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ActivityIndicator IsRunning="{Binding IsLoading}"
+                               Color="blue"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"/>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

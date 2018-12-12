@@ -27,6 +27,9 @@ namespace WebScrapingDemo.ViewModels
                 if(_categorySelected != null)
                 {
                     _navigation.PushAsync(new ProductsPage(_categorySelected));
+                    _categorySelected = null;
+
+                    OnPropertyChanged();
                 }
             }
 

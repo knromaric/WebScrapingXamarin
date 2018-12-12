@@ -32,7 +32,7 @@ namespace WebScrapingDemo.ViewModels
 
         private void LikePageCommandMethod(object obj)
         {
-            _navigation.PushAsync(new LikePage());
+            Device.OpenUri(new Uri("https://www.facebook.com"));
         }
 
         private void NewsAndEventsCommandMethod(object obj)

@@ -5,7 +5,8 @@
     <ContentPage.Content>
         <ListView ItemsSource="{Binding CategoriesCollection}"
                   HasUnevenRows="True"
-                  SelectedItem="{Binding CategorySelected, Mode=TwoWay}">
+                  SelectedItem="{Binding CategorySelected, Mode=TwoWay}"
+                  CachingStrategy="RecycleElement">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
