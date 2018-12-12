@@ -9,7 +9,7 @@
                     <ViewCell>
                         <Frame>
                             <StackLayout>
-                                <Label Text="{Binding Title}" FontSize="Large" HorizontalTextAlignment="Center" />
+                                <Label Text="{Binding Title}" FontAttributes="Bold" FontSize="Large" HorizontalTextAlignment="Center" />
                                 <Label Text="{Binding Description}" />
                             </StackLayout>
                         </Frame>
